@@ -460,7 +460,7 @@ h2 {
 
 .footer-content {
     display: block;
-    width: 65%;
+    width: 25%;
 }
 
 .footer-social-item {
@@ -484,6 +484,59 @@ h2 {
 }
 
 .footer-social-icon {
+}
+
+.footer-form {
+}
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+.footer-form-wrapper {
+    display: flex;
+}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid var(--white-color);
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white-color);
+}
+
+.subscribe-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+    min-width: 165px;
+    padding: 8px 24px;
+    gap: 16px;
+    color: var(--white-color);
+    background-color: var(--accent-bg-color);
+}
+
+.suscribe-icon {
 }
 
 .backdrop {
@@ -511,6 +564,7 @@ h2 {
     background: #FCFCFC;
     width: 408px;
     height: 576px;
+    padding: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -522,8 +576,6 @@ h2 {
 .button-close {
     display: block;
     margin-left: auto;
-    padding-top: 24px;
-    padding-right: 24px;
     box-sizing: border-box;
     border: 0em;
     background-color: #FCFCFC;
@@ -532,6 +584,180 @@ h2 {
 
 .close-icon {
     
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 24px;
+
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    border-radius: 4px;
+    padding: 14px 38px;
+    outline: transparent;
+}
+
+.form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-icon {
+    fill: var(--accent-color);
+}
+
+.form-label span {
+    color: #8E8F99;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+}
+
+.form-label:focus {
+    fill: var(--accent-color);
+    outline: none;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-feedback {
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: transparent;
+}
+
+.form-feedback:focus::placeholder {
+    border-color: var(--accent-color);
+}
+
+.form-feedback:focus {
+    border-color: var(--accent-color);
+}
+
+.form-label-checkbox {
+    color: #8E8F99;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+}
+
+.form-label-checkbox::before {
+    /* content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #404BBF;
+    border-radius: 2px;
+    margin-right: 8px; */
+}
+
+.form-checkbox:checked~ .form-label-checkbox {
+    background-color: var(--button-bg-color);
+    background-image: url(../images/checkbox.svg);
+    border-color: var(--button-bg-color);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+/* .form-label-checkbox span {
+    
+    width: 16px;
+    height: 16px;
+    border: 1px solid #404BBF;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    fill: transparent;
+} */
+
+.form-policy {
+    color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    top: -150%;
+    z-index: -100;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    pointer-events: none;
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    white-space: nowrap;
+}
+ .checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #404BBF;
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.checkbox-icon-accept {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    fill: transparent;
+}
+
+
+
+.form-button {
+    color: var(--white-color);
+    background-color: var(--accent-bg-color);
+    width: 169px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;  
+    align-items: center;
+    letter-spacing: 0.04em;
+    transition: background-color 250ms var(--timing-function);
+    cursor: pointer;
 }
 
 /* Portfolio */
