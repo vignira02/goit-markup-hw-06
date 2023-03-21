@@ -575,7 +575,7 @@ h2 {
 .modal {
     background: #FCFCFC;
     width: 408px;
-    height: 576px;
+    min-height: 576px;
     padding: 24px;
     position: absolute;
     top: 50%;
@@ -613,6 +613,8 @@ h2 {
 
 .close-icon {
     display: block;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     transition: color 250ms var(--timing-function);
     color: var(--white-color)
@@ -699,8 +701,9 @@ h2 {
 }
 
 .form-feedback:focus::placeholder {
+    color: var(--accent-color);
     border-color: var(--accent-color);
-    transition: border 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .form-feedback:focus {
